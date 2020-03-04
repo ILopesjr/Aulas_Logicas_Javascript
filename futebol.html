@@ -1,0 +1,28 @@
+<meta charset="UTF-8">
+
+<script>
+
+	function pulaLinha(){
+		document.write("<br><br>");
+	}
+	
+	function mostra(frase){
+		document.write(frase);
+		pulaLinha();
+	}
+	
+	var vitorias = parseInt(prompt("Digite números de vitória."));
+	var empates = parseInt(prompt("Digite números de empates."));
+	var total = vitorias * 3 + empates;
+	
+	mostra("Total de pontos: " + total);
+	
+	if (total > 28){
+		mostra("Time está melhor!");	
+	}else if(total < 28){
+		mostra("Time está pior!");
+	}else{
+		mostra("Está igual!");
+	}
+
+</script>
